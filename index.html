@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="traficLightApp">
+<head>
+    <link rel="stylesheet" href="style.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="light.js"></script>
+  </head>
+  <body>
+    <div ng-controller="traficLightCtrl">
+    <script id="directives/communicationExamples/fastClicker.tpl.html" type="text/ng-template">
+    </script>
+    <div stop-light-container options="state" class="trafficlightwork" ng-repeat="states">
+      <canvas class="light" stop-light state="red"></canvas>
+      <canvas class="light" stop-light state="yellow"></canvas>
+      <canvas class="light" stop-light state="green"></canvas>
+      <fast-clicker></fast-clicker>
+    </div>
+  </div>
+    </body>
+    </html>
